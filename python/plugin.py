@@ -19,7 +19,8 @@ langs = {
         ".py": "python",
         ".cpp": "c++",
         ".c": "c",
-        ".hs": "haskell"
+        ".hs": "haskell",
+        ".cs": "csharp"
         }
 
 
@@ -29,7 +30,7 @@ def _get_conn():
     """
     conn = None
     try:
-       conn = sqlite3.connect(db_fp)
+        conn = sqlite3.connect(db_fp)
     except Error as e:
         print(e)
     return conn
